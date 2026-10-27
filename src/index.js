@@ -103,11 +103,21 @@ export default {
       }));
 
       return json({
-        set,
-        source: "eBay",
-        total: offres.length,
-        offres
-      });
+  set,
+  source: "eBay",
+  total: offres.length,
+  offres,
+  offers: offres.map(item => ({
+    title: item.titre,
+    seller: item.vendeur,
+    price: item.prix,
+    currency: item.devise,
+    shipping: item.livraison,
+    image: item.image,
+    url: item.lien,
+    condition: item.etat
+  }))
+});
 
     } catch (error) {
       return json({

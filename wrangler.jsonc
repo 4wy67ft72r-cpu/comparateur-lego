@@ -1,7 +1,5 @@
 {
-  "name": "comparateur-lego-v2",
-  "compatibility_date": "2026-10-26",
-  "assets": {
-    "directory": "."
-  }
+  "name": "lego-ebay-api",
+  "main": "src/index.js",
+  "compatibility_date": "2026-10-26"
 }
